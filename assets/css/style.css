@@ -1,4 +1,50 @@
+/*=====================================*/
+/*========= GOOGLE WEB FONTS  =========*/
+/*=====================================*/
+/* Import "Cabin" at all weights: */
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&subset=latin-ext');
+
+
+/*=====================================*/
+/*========= GENERAL FORMATTING  =======*/
+/*=====================================*/
 body {
   background-color: whitesmoke;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Cabin', sans-serif;
+  margin: 30px;
+}
+
+.footer-text {
+  font-size: .5em;
+  font-style: italic;
+  text-align: center;
+  font-weight: 200;
+}
+
+/*=====================================*/
+/*========== MOBILE FORMATTING ========*/
+/*=====================================*/
+@media only screen and (max-width: 485px) {
+  body {
+    font-size: 1.5em;
+  }
+}
+
+
+/*=====================================*/
+/*========== TABLET FORMATTING ========*/
+/*=====================================*/
+@media only screen and (min-width: 486px) and (max-width: 865px) {
+  body {
+    font-size: 2em;
+  }
+}
+
+/*=====================================*/
+/*========= DESKTOP FORMATTING ========*/
+/*=====================================*/
+@media only screen and (min-width: 866px) {
+  body {
+    font-size: 2.5em;
+  }
 }
