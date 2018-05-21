@@ -1,3 +1,6 @@
+<?php 
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +14,8 @@
   <!-- REMOVE THIS FOR PRODUCTION  -->
   <meta name="robots" content="nofollow" />
   <title><?= $title ?></title>
+  <link rel="stylesheet" href="<?php echo base_url('assets/css/reset.css'); ?>">
   <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/fonts/fontello/css/fontello.css'); ?>">
 </head>
 <body>

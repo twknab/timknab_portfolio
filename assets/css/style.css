@@ -1,50 +1,145 @@
 /*=====================================*/
+
 /*========= GOOGLE WEB FONTS  =========*/
+
 /*=====================================*/
+
 /* Import "Cabin" at all weights: */
+
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&subset=latin-ext');
-
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
 
 /*=====================================*/
+
 /*========= GENERAL FORMATTING  =======*/
+
 /*=====================================*/
+
 body {
-  background-color: whitesmoke;
-  font-family: 'Cabin', sans-serif;
-  margin: 30px;
+	background-color: whitesmoke;
+	font-family: 'Cabin', sans-serif;
+	line-height: 1.3em;
+	/* margin: 30px; */
 }
 
-.footer-text {
-  font-size: .5em;
-  font-style: italic;
+h1 {
+  font-size: 2.5em;
+  padding: 25px;
+}
+
+p {
+  padding: 6px;
+  margin: 10px 25px;
+}
+
+/* Enlarges items for high impact */
+.high-impact {
+  font-family: 'Bungee Inline',
+  cursive;
+}
+
+/* Classes for quick-aligning text */
+.text-center {
   text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.footer {
+  height: 100%;
+  font-size: 25px;
+}
+.footer-text {
+	font-size: .5em;
+	font-style: italic;
+	text-align: center;
   font-weight: 200;
 }
 
+/* The navigation bar */
+
+.navbar {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 10px 0;
+	background-color: #00E4FF;
+	font-weight: bolder;
+	font-family: 'Bungee Inline', cursive;
+}
+
+.navbar>ul {
+  text-align: justify;
+}
+
+.navbar>ul>li {
+  font-size: 2em;
+  height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar>ul:after {
+	content: ' ';
+	display: inline-block;
+	width: 100%;
+	height: 0
+}
+
+.navbar>ul>li>a {
+	text-decoration: none;
+	color: #000;
+}
+.navbar>ul>li>a:hover {
+	color: #A73BF0;
+
+}
+
+.footer {
+	margin: 50px 0 80px 0;
+	/* Add a bottom margin to avoid content overlay */
+}
+
 /*=====================================*/
+
 /*========== MOBILE FORMATTING ========*/
+
 /*=====================================*/
+
 @media only screen and (max-width: 485px) {
-  body {
-    font-size: 1.5em;
+	body {
+		font-size: 1.5em;
   }
+  .navbar>ul>li {
+    font-size: 1em;
+    height: 10px;
+  }
+
 }
 
-
 /*=====================================*/
+
 /*========== TABLET FORMATTING ========*/
+
 /*=====================================*/
+
 @media only screen and (min-width: 486px) and (max-width: 865px) {
-  body {
-    font-size: 2em;
-  }
+	body {
+		font-size: 2em;
+	}
 }
 
 /*=====================================*/
+
 /*========= DESKTOP FORMATTING ========*/
+
 /*=====================================*/
+
 @media only screen and (min-width: 866px) {
-  body {
-    font-size: 2.5em;
-  }
+	body {
+		font-size: 2.5em;
+	}
 }
