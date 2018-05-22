@@ -19,6 +19,24 @@ $this->load->view('includes/header', $data);
   <p>-Tim Knab</p>
 </div> 
 
+
+<!-- Form -->
+<?php 
+$hidden = array('user_id' => 1);
+$my_thing = "Tim";
+echo form_fieldset('Your Name');
+echo form_open('/form', 'method="GET"', $hidden);
+echo form_input(array('name' => 'first_name', 'id' => 'first_name', 'type' => 'text', 'placeholder' => 'First Name', 'value' => set_value('first_name', $my_thing)));
+echo form_input(array('name' => 'last_name', 'id' => 'last_name', 'type' => 'text', 'placeholder' => 'Last Name'));
+echo form_input(array('name' => 'email', 'id' => 'email', 'type' => 'email', 'placeholder' => 'Email Address'));
+echo form_input(array('name' => 'age', 'id' => 'age', 'type' => 'number', 'placeholder' => 'Your Age'));
+echo form_textarea(array('name' => 'description', 'id' => 'description', 'placeholder' => 'Enter your description.'));
+echo form_submit('submit_form', 'Submit');
+echo form_close();
+echo form_fieldset_close();
+echo set_value('first_name', $my_thing);
+?>
+
 <?php 
 // Load footer:
 $this->load->view('includes/footer');

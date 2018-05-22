@@ -65,7 +65,7 @@ p {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	padding: 10px 0;
+	/* padding: 10px 0; */
 	background-color: #00E4FF;
 	font-weight: bolder;
 	font-family: 'Bungee Inline', cursive;
@@ -73,10 +73,12 @@ p {
 
 .navbar>ul {
   text-align: justify;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
 .navbar>ul>li {
-  font-size: 2em;
+  font-size: .8em;
   height: 15px;
   display: inline-block;
   vertical-align: middle;
@@ -111,7 +113,7 @@ p {
 
 @media only screen and (max-width: 485px) {
 	body {
-		font-size: 1.5em;
+		font-size: 1em;
   }
   .navbar>ul>li {
     font-size: 1em;
