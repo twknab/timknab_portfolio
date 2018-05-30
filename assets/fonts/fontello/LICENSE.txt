@@ -1,12 +1,12 @@
 Font license info
 
 
-## Typicons
+## Iconic
 
-   (c) Stephen Hutchings 2012
+   Copyright (C) 2012 by P.J. Onori
 
-   Author:    Stephen Hutchings
+   Author:    P.J. Onori
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://typicons.com/
+   Homepage:  http://somerandomdude.com/work/iconic/
 
 

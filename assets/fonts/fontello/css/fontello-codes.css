@@ -1,9 +1,7 @@
 
-.icon-home-outline:before { content: '\e800'; } /* '' */
-.icon-pen:before { content: '\e801'; } /* '' */
-.icon-flash-outline:before { content: '\e802'; } /* '' */
-.icon-picture-outline:before { content: '\e803'; } /* '' */
-.icon-mail:before { content: '\e804'; } /* '' */
-.icon-info-outline:before { content: '\e805'; } /* '' */
-.icon-right-open-outline:before { content: '\e806'; } /* '' */
-.icon-left-open-outline:before { content: '\e807'; } /* '' */
+.icon-home:before { content: '\e800'; } /* '' */
+.icon-mail:before { content: '\e801'; } /* '' */
+.icon-pencil-neg:before { content: '\e802'; } /* '' */
+.icon-picture:before { content: '\e803'; } /* '' */
+.icon-info:before { content: '\e804'; } /* '' */
+.icon-flash:before { content: '\e805'; } /* '' */

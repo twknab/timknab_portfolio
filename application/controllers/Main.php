@@ -8,7 +8,7 @@ class Main extends CI_Controller
     $data = [];
     // $this->load->helper('url');
     // Load Index Page:
-    $this->load->view("index", $data);
+    $this->load->view("main", $data);
   }
   public function form()
   {
@@ -19,7 +19,7 @@ class Main extends CI_Controller
     var_dump($form);
     
     // Load Index Page:
-    $this->load->view("index", $data);
+    $this->load->view("main", $data);
   }
 
 }

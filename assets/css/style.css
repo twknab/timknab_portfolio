@@ -6,8 +6,11 @@
 
 /* Import "Cabin" at all weights: */
 
-@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&subset=latin-ext');
+/* @import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&subset=latin-ext'); */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800');
+
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+@import url('./reset.css');
 
 /*=====================================*/
 
@@ -15,21 +18,44 @@
 
 /*=====================================*/
 
+/* Set background color, font and line-height */
 body {
 	background-color: whitesmoke;
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	line-height: 1.3em;
-	/* margin: 30px; */
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 10vw;
   padding: 25px;
 }
 
 p {
   padding: 6px;
   margin: 10px 25px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+::selection {
+  background: #9C0FFB;
+  color: #FFFB00;
+	/* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #9C0FFB;
+  color: #FFFB00;
+	/* Gecko Browsers */
+}
+
+/* Center logo */
+#logo > img {
+  display: block;
+  margin: 60px auto;
 }
 
 /* Enlarges items for high impact */
@@ -59,47 +85,63 @@ p {
   font-weight: 200;
 }
 
-/* The navigation bar */
-
 .navbar {
 	position: fixed;
 	bottom: 0;
-	width: 100%;
-	/* padding: 10px 0; */
-	background-color: #00E4FF;
-	font-weight: bolder;
-	font-family: 'Bungee Inline', cursive;
+  width: 100%;
+	background-color: #A73BF0;
+  border-top: 1px solid #3D3D3D;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
 }
 
+/* Justify navbar items and add margins */
 .navbar>ul {
-  text-align: justify;
-  margin-right: 20px;
-  margin-left: 10px;
+  text-align: center;
+  margin-top: 0.8%;
+  display: flex;
+  flex-direction: none;
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }
 
 .navbar>ul>li {
-  font-size: .8em;
-  height: 15px;
   display: inline-block;
   vertical-align: middle;
-}
-
-.navbar>ul:after {
-	content: ' ';
-	display: inline-block;
-	width: 100%;
-	height: 0
+  text-align: center;
 }
 
 .navbar>ul>li>a {
 	text-decoration: none;
-	color: #000;
+	color: #FF00FF;
+  text-shadow: 1px 1px 2px #9C0FFB;
+
+
 }
 .navbar>ul>li>a:hover {
-	color: #A73BF0;
+  /* color: beige; */
+  color: #00E4FF;
+
 
 }
+.navbar>ul>li>a>i {
+  text-align: center;
+  font-size: 4em;
+  /* font-size: 1.3em; */
+}
+.navbar>ul>li>a>span {
+  display: block;
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-weight: 200;
+}
+#selected {
+  color: #FFFB00;
 
+
+
+
+}
 .footer {
 	margin: 50px 0 80px 0;
 	/* Add a bottom margin to avoid content overlay */
@@ -111,7 +153,7 @@ p {
 
 /*=====================================*/
 
-@media only screen and (max-width: 485px) {
+/* @media only screen and (max-width: 485px) {
 	body {
 		font-size: 1em;
   }
@@ -120,7 +162,7 @@ p {
     height: 10px;
   }
 
-}
+} */
 
 /*=====================================*/
 
@@ -128,11 +170,11 @@ p {
 
 /*=====================================*/
 
-@media only screen and (min-width: 486px) and (max-width: 865px) {
+/* @media only screen and (min-width: 486px) and (max-width: 865px) {
 	body {
 		font-size: 2em;
 	}
-}
+} */
 
 /*=====================================*/
 
@@ -140,8 +182,8 @@ p {
 
 /*=====================================*/
 
-@media only screen and (min-width: 866px) {
+/* @media only screen and (min-width: 866px) {
 	body {
 		font-size: 2.5em;
 	}
-}
+} */
